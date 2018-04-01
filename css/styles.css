@@ -634,30 +634,18 @@ video{
 }
 
 /* MAIN GENERIC RESPONSIVE PROPERTY DEFINITIONS */
-@media screen and (max-width: 800px){	
-	.header-container{
-		background-repeat: no-repeat;
-		background-position: left top;
-	}
 
-	#title{
-		margin: 1.75em 0 1.5em 8em;
-	}
-
-	#site-page-header h1 { 
-		font-size: 3em; 
-		text-shadow: 1px 1px 0 #999999;
-	}
-}
 
 /* SMALL SIZED DISPLAY MONITORS (BIGGER THAN MOBILE) */
-
 @media screen and (max-width: 1420px){	
 	ul.top-links-bar{
 		float: left;
 		padding-left: 160px;
 	}
-
+	.img-botm img{
+		width: 60px; 
+		height: auto;
+	}
 	.fixed {
 		width: 100%;
 		position: relative;
@@ -673,16 +661,25 @@ video{
 
 }
 
+@media screen and (max-width: 800px){	
+	.header-container{
+		background-repeat: no-repeat;
+		background-position: left top;
+	}
+	#title{
+		margin: 1.75em 0 1.5em 8em;
+	}
+	#site-page-header h1 { 
+		font-size: 3em; 
+		text-shadow: 1px 1px 0 #999999;
+	}
+}
 
 @media screen and (max-width: 650px){
 	
 	.header-container{
 		background-repeat: no-repeat;
 		background-position: left top;
-	}	
-	.img-left, .img-right{
-		width: 90px; 
-		height: auto;
 	}
 	#title{
 		margin: 1.5em 0 1.5em 6em;
