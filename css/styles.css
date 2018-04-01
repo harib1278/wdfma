@@ -88,7 +88,7 @@ label span{
 fieldset {
 	padding: 20px;
 	border: 1px solid #ced6e0;
-	box-shadow: 2px 4px 0px #999999;
+	box-shadow: 10px 9px 5px #CCC;
 }
 
 textarea {
@@ -96,7 +96,7 @@ textarea {
 }
 
 textarea, input[type=text], input[type=email] {
-	width: 50%;
+	width: 55%;
 }
 
 legend {
@@ -137,8 +137,7 @@ ul.top-links-bar {
 
 @media screen and (max-width: 780px){
 	ul.top-links-bar { 
-		width: 75%;
-
+		display: none;
 	}
 }
 
@@ -280,11 +279,11 @@ li.current-page{
 	float: left;
 	font-family: 'Roboto Condensed', Georgia, serif;
 	font-size: 1.5em;
+
 }
 
 #site-page-header nav li:last-child {
-	margin-right: 0;
-	
+	margin-right: 0;	
 }
 
 #site-page-header nav li a {
@@ -412,7 +411,8 @@ figure.img-botm{
 }
 
 /* HOME PAGE CONTAINER PROPERTIES */
-.books-container, .video-container{
+.books-container, 
+.video-container{
 	padding: 22px 0px 30px;
 	background-color: #ffffff;
 	height: auto;
@@ -495,7 +495,7 @@ video{
 
 #col-1 #content {
 	float: left;
-	width: 73%;
+	width: 72%;
 	padding-right: 30px;	
 }
 
@@ -520,7 +520,8 @@ video{
 	border: none;
 }
 
-#main-page-footer a:link, #main-page-footer a:visited {
+#main-page-footer a:link,
+#main-page-footer a:visited {
 	color:#236841;
 	text-decoration: none;
 }
@@ -534,7 +535,8 @@ video{
 	background-color: #4c4c4c;
 }
 
-#col-2 nav, #col-2 section {
+#col-2 nav,
+#col-2 section {
 	color: #d4d4d4;
 	padding: 1em 1em 0 1em;
 }
@@ -566,7 +568,8 @@ video{
 	padding-left: 1em;
 }
 
-#col-2  nav li a:focus, #col-2  nav li a:hover {
+#col-2  nav li a:focus, 
+#col-2  nav li a:hover {
 	color: #ffffff;
 	background-color: #236841;	
 	-webkit-transition:background-color 200ms linear;
@@ -587,11 +590,12 @@ video{
 	float: left;
 	color: #ffffff;
 	background-color: #4c4c4c;
-	box-shadow: 2px 4px 0 #999999;
+	box-shadow: 10px 9px 5px #CCC;
 }
 
 /* PAGE CONTENT SEPERATION */
-#col-2 p, #content ul{
+#col-2 p, 
+#content ul{
 	margin-bottom: 2.30em;
 }
 
@@ -646,6 +650,30 @@ video{
 	}
 }
 
+/* SMALL SIZED DISPLAY MONITORS (BIGGER THAN MOBILE) */
+
+@media screen and (max-width: 1420px){	
+	ul.top-links-bar{
+		float: left;
+    	padding-left: 160px;
+	}
+
+	.fixed {
+		width: 100%;
+		position: relative;
+	}
+	#col-2{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	#col-1 #content{
+		width: 100%;
+	}
+
+}
+
+
 @media screen and (max-width: 650px){
 	
 	.header-container{
@@ -662,6 +690,7 @@ video{
 	}
 
 	ul.top-links-bar li {
+		padding-left: 160px;
 		font-size: 0.9em;
 	}
 }
@@ -678,7 +707,7 @@ video{
 		margin: 0.5em 0 1.5em 4em;
 	}
 	
-	ul.top-links-bar li {
+	ul.top-links-bar li {		
 		font-size: 0.8em;
 	}
 	
