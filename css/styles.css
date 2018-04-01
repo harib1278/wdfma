@@ -655,7 +655,7 @@ video{
 @media screen and (max-width: 1420px){	
 	ul.top-links-bar{
 		float: left;
-    	padding-left: 160px;
+		padding-left: 160px;
 	}
 
 	.fixed {
@@ -679,8 +679,11 @@ video{
 	.header-container{
 		background-repeat: no-repeat;
 		background-position: left top;
+	}	
+	.img-left, .img-right{
+		width: 90px; 
+		height: auto;
 	}
-
 	#title{
 		margin: 1.5em 0 1.5em 6em;
 	}
@@ -703,14 +706,16 @@ video{
 		background-repeat: no-repeat;
 		background-position: left top;
 	}
+	.img-left, .img-right{
+		width: 70px; 
+		height: auto;
+	}
 	#title{
 		margin: 0.5em 0 1.5em 4em;
-	}
-	
-	ul.top-links-bar li {		
+	}	
+	ul.top-links-bar li {
 		font-size: 0.8em;
-	}
-	
+	}		
 }
 
 @media screen and (max-width: 415px){
@@ -724,6 +729,10 @@ video{
 		font-size: .5em;
 	}
 
+	.img-left, .img-right{
+		width: 60px; 
+		height: auto;
+	}
 	.header-container{
 		background-repeat: no-repeat;
 		background-position: left top;
@@ -774,7 +783,7 @@ video{
 
 /* REORGANISE THE MAIN SITE ELEMENTS FOR MOBILE VIEW */
 @media screen and (max-width: 900px) {   
-    /* FIX PADDING ISSUES ON MOBILE VIEW */
+	/* FIX PADDING ISSUES ON MOBILE VIEW */
 	#col-2 {
 		width: auto;
 	}
@@ -784,14 +793,14 @@ video{
 		float: none;
 	}
 
-    #navbar-wrap{
+	#navbar-wrap{
 		background-color: #ffffff;
 		border: 0;
 	}
 
 	.fixed {
 		position: static;
-    	width: 100%;	}
+		width: 100%;	}
 	
 	#site-page-header nav li.currentpage a {
 		background-color: #ffffff;
